@@ -897,6 +897,7 @@
     cursor: pointer;
     transition: border-color 0.4s;
   }
+  a.project-card { display: block; }
   .project-card:hover { border-color: var(--gold); }
   .project-card-img {
     width: 100%;
@@ -1256,4 +1257,120 @@
   /* ── REDUCED MOTION ─────────────────────────────────── */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  /* ── PROJECT DETAIL PAGES ──────────────────────────── */
+  .detail-page { background: var(--warm-white); }
+  .detail-main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 160px 60px 100px;
+  }
+  .detail-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--ff-label);
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    margin-bottom: 48px;
+    transition: gap 0.3s;
+  }
+  .detail-back:hover { gap: 18px; color: var(--ink); }
+  .detail-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+    gap: 72px;
+    align-items: end;
+    padding-bottom: 72px;
+    border-bottom: 1px solid var(--border);
+  }
+  .detail-kicker { margin-bottom: 18px; }
+  .detail-title {
+    font-family: var(--ff-display);
+    font-size: clamp(2.2rem, 6vw, 5.4rem);
+    line-height: 0.98;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    max-width: 720px;
+  }
+  .detail-lead {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-top: 28px;
+    max-width: 580px;
+  }
+  .detail-hero-image {
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--border-strong);
+    padding: 10px;
+    background: var(--cream);
+  }
+  .detail-hero-image img { width: 100%; height: 100%; object-fit: cover; }
+  .detail-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 36px;
+  }
+  .detail-meta-item { border-top: 1px solid var(--border); padding-top: 12px; }
+  .detail-meta-label, .detail-section-label {
+    font-family: var(--ff-label);
+    font-size: 0.55rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .detail-meta-value { display: block; margin-top: 5px; font-size: 1rem; }
+  .detail-content {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr);
+    gap: 72px;
+    padding-top: 72px;
+  }
+  .detail-section { margin-bottom: 64px; }
+  .detail-section h2 {
+    font-family: var(--ff-display);
+    font-size: clamp(1.4rem, 3vw, 2.3rem);
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .detail-section p, .detail-section li { color: var(--text-muted); line-height: 1.85; }
+  .detail-section ul { padding-left: 20px; }
+  .detail-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+  .detail-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 28px; }
+  .detail-gallery figure { margin: 0; background: var(--cream); border: 1px solid var(--border); padding: 8px; }
+  .detail-gallery img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+  .detail-gallery figcaption { padding: 10px 4px 4px; font-family: var(--ff-label); font-size: 0.5rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); }
+  .detail-diagram {
+    border: 1px solid var(--border-strong);
+    background: var(--cream);
+    padding: 28px;
+    font-family: var(--ff-label);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: var(--gold-dark);
+    text-align: center;
+  }
+  .detail-diagram img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .detail-diagram-flow { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  .detail-diagram-node { border: 1px solid var(--gold); padding: 14px 16px; color: var(--ink); background: var(--warm-white); }
+  .detail-diagram-arrow { color: var(--gold); font-size: 1rem; }
+  .detail-next { border-top: 1px solid var(--border); padding-top: 28px; display: inline-flex; gap: 12px; font-family: var(--ff-label); font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-dark); }
+  @media (max-width: 768px) {
+    .detail-main { padding: 130px 20px 64px; }
+    .detail-hero, .detail-content { grid-template-columns: 1fr; gap: 40px; }
+    .detail-hero { padding-bottom: 48px; }
+    .detail-content { padding-top: 48px; }
+    .detail-meta { grid-template-columns: 1fr; gap: 14px; }
+    .detail-gallery { grid-template-columns: 1fr; }
   }
