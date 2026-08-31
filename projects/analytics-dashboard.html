@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Analytics Dashboard | Suraj Dev</title>
+    <title>Webanly — Real-Time Analytics Platform | Suraj Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,31 +26,32 @@
       <section class="detail-hero">
         <div>
           <div class="section-label detail-kicker">Featured Project · 01</div>
-          <h1 class="detail-title">Analytics Dashboard</h1>
+          <h1 class="detail-title">Webanly</h1>
           <p class="detail-lead">
-            A powerful analytics dashboard for tracking key metrics and
-            performance in real time, designed for fast decisions and clear
-            operational visibility.
+            A self-hosted web analytics platform I designed and built from
+            the ground up — event pipeline, live dashboards, and everything
+            in between. Visitors land on a tracked site, and the data is on
+            screen before they've finished loading the next page.
           </p>
           <div class="detail-meta">
             <div class="detail-meta-item">
               <span class="detail-meta-label">Role</span
-              ><span class="detail-meta-value">Full Stack Developer</span>
+              ><span class="detail-meta-value">Solo Full Stack Developer</span>
             </div>
             <div class="detail-meta-item">
               <span class="detail-meta-label">Focus</span
-              ><span class="detail-meta-value">Data &amp; performance</span>
+              ><span class="detail-meta-value">Real-time systems &amp; data pipelines</span>
             </div>
             <div class="detail-meta-item">
               <span class="detail-meta-label">Status</span
-              ><span class="detail-meta-value">Selected work</span>
+              ><span class="detail-meta-value">Live &amp; deployed</span>
             </div>
           </div>
         </div>
         <div class="detail-hero-image">
           <img
             src="../asset/webAnlyIntro.png"
-            alt="Analytics Dashboard interface"
+            alt="Webanly analytics dashboard interface"
           />
         </div>
       </section>
@@ -60,27 +61,53 @@
           <div class="detail-stack">
             <span class="tag">Next.js</span><span class="tag">Express.js</span
             ><span class="tag">Redis</span><span class="tag">Kafka</span
-            ><span class="tag">Prisma</span><span class="tag">PostgreSQL</span>
+            ><span class="tag">Prisma</span><span class="tag">PostgreSQL</span
+            ><span class="tag">WebSockets</span><span class="tag">Docker</span>
           </div>
         </aside>
         <div>
           <section class="detail-section">
             <h2>The challenge</h2>
             <p>
-              Teams need a single place to understand what is happening across
-              their product. The dashboard brings high-volume metrics into a
-              focused interface where trends, performance, and key changes can
-              be scanned quickly.
+              Most analytics tools are black boxes — you drop in a script and
+              trust a third party with your data. I wanted to build the
+              alternative: a platform where I owned every piece of the
+              pipeline, from the tracking script on the client's page to the
+              pixel on the dashboard chart, and where "real-time" actually
+              meant real-time, not a five-minute refresh.
             </p>
           </section>
           <section class="detail-section">
             <h2>What I built</h2>
             <ul>
-              <li>Responsive dashboard views for core business metrics.</li>
-              <li>Data-fetching and caching patterns for responsive charts.</li>
               <li>
-                Backend services prepared for streaming and asynchronous
-                workloads.
+                A lightweight, cookie-free tracking script and a full event
+                pipeline — collector → Kafka → Postgres — handling everything
+                from pageviews to exit intent.
+              </li>
+              <li>
+                A dual-topic Kafka design that separates durable event
+                storage from a slim real-time stream, so the live dashboard
+                and historical reports never compete for the same data path.
+              </li>
+              <li>
+                A WebSocket layer that merges live traffic straight into the
+                same charts the REST API populates, with zero visual seams
+                between "historical" and "happening now."
+              </li>
+              <li>
+                Redis-backed spike detection with a self-adjusting baseline —
+                the platform learns what "normal" traffic looks like for
+                each site and alerts you the moment it's not.
+              </li>
+              <li>
+                Timezone-correct reporting down to the SQL query level, so
+                "today" means today for the visitor, not for the server.
+              </li>
+              <li>
+                A fully containerized deployment — multi-stage Docker builds,
+                Turborepo-pruned images, and a Compose stack that brings up
+                Postgres, Redis, Kafka, and both apps with one command.
               </li>
             </ul>
           </section>
@@ -89,20 +116,24 @@
             <div class="detail-diagram">
               <img
                 src="../asset/webAnlyDiagram.svg"
-                alt="Analytics Dashboard system diagram"
+                alt="Webanly system architecture diagram"
               />
             </div>
           </section>
           <section class="detail-section">
             <h2>Project visuals</h2>
             <div class="detail-visuals">
-              <img src="../asset/wb0.png" alt="Analytics Dashboard visual 1" />
-              <img src="../asset/wb1.png" alt="Analytics Dashboard visual 2" />
-              <img src="../asset/wb2.png" alt="Analytics Dashboard visual 3" />
-              <img src="../asset/wb3.png" alt="Analytics Dashboard visual 4" />
+              <img src="../asset/wb0.png" alt="Webanly dashboard visual 1" />
+              <img src="../asset/wb1.png" alt="Webanly dashboard visual 2" />
+              <img src="../asset/wb2.png" alt="Webanly dashboard visual 3" />
+              <img src="../asset/wb3.png" alt="Webanly dashboard visual 4" />
             </div>
           </section>
           <a class="detail-next" href="cyclework.html">Next project →</a>
+          <p></p>
+          <a href="https://webanly-dashboard.vercel.app" class="btn-primary"><span>VISIT DEPLOYED PROJECT DEMO</span><span class="arrow">→</span> </a>
+          
+          <a class="btn-primary" href="https://github.com/Suraj-xaosi/webAnly.git"><span>VISIT SOURCE CODE REPO</span><span class="arrow">→</span> </a>
         </div>
       </section>
     </main>

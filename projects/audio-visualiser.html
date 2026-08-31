@@ -28,9 +28,9 @@
           <div class="section-label detail-kicker">Featured Project · 04</div>
           <h1 class="detail-title">Audio Visualiser</h1>
           <p class="detail-lead">
-            A compact browser audio experience with customizable visuals,
-            persistent preferences, and an interface designed to keep the sound
-            in focus.
+            A browser-based app that turns any song into real-time animated
+            bars, with an interface built around customizable themes,
+            offline playback, and a distraction-free listening view.
           </p>
           <div class="detail-meta">
             <div class="detail-meta-item">
@@ -39,11 +39,11 @@
             </div>
             <div class="detail-meta-item">
               <span class="detail-meta-label">Focus</span
-              ><span class="detail-meta-value">Audio interaction</span>
+              ><span class="detail-meta-value">Real-time audio visuals</span>
             </div>
             <div class="detail-meta-item">
               <span class="detail-meta-label">Storage</span
-              ><span class="detail-meta-value">IndexedDB</span>
+              ><span class="detail-meta-value">IndexedDB (offline)</span>
             </div>
           </div>
         </div>
@@ -55,29 +55,46 @@
         <aside>
           <div class="detail-section-label">01 / Overview</div>
           <div class="detail-stack">
-            <span class="tag">Next.js</span><span class="tag">CSS</span
-            ><span class="tag">Redux</span><span class="tag">CDN</span
-            ><span class="tag">IndexedDB</span>
+            <span class="tag">Next.js</span><span class="tag">Redux Toolkit</span
+            ><span class="tag">Tailwind CSS</span
+            ><span class="tag">Web Audio API</span
+            ><span class="tag">IndexedDB</span><span class="tag">Docker</span>
           </div>
         </aside>
         <div>
           <section class="detail-section">
             <h2>The idea</h2>
             <p>
-              This project explores how a small utility can feel expressive
-              without becoming difficult to use. The visualiser responds to
-              audio while keeping controls and customization close at hand.
+              Most audio players hide the sound behind a plain progress bar.
+              This project puts the sound itself on screen — every beat
+              becomes a moving bar, rendered live as the track plays, with a
+              theme system so the visuals can match the mood of the music.
             </p>
           </section>
           <section class="detail-section">
             <h2>What I built</h2>
             <ul>
-              <li>Customizable visual treatment and interface controls.</li>
               <li>
-                Client-side audio interaction with a responsive rendering
-                surface.
+                A canvas-based visualiser powered by the Web Audio API's
+                analyser node, drawing smooth animated bars in sync with the
+                audio frequency data.
               </li>
-              <li>Local persistence for user preferences and saved state.</li>
+              <li>
+                Local audio uploads saved to the browser with IndexedDB, so
+                tracks persist and play back offline without a server.
+              </li>
+              <li>
+                An online library pulled from a CDN manifest, letting users
+                browse and queue hosted tracks alongside their own uploads.
+              </li>
+              <li>
+                A full theme customiser with live color presets, saved to
+                local storage so preferences carry over between sessions.
+              </li>
+              <li>
+                A Redux-driven playlist system — queue, auto-advance, and
+                switch between local and online sources seamlessly.
+              </li>
             </ul>
           </section>
           <section class="detail-section">
@@ -86,11 +103,11 @@
               <div class="detail-diagram-flow">
                 <span class="detail-diagram-node">Audio Input</span
                 ><span class="detail-diagram-arrow">→</span
-                ><span class="detail-diagram-node">Analyzer</span
+                ><span class="detail-diagram-node">Analyser Node</span
                 ><span class="detail-diagram-arrow">→</span
-                ><span class="detail-diagram-node">Visualiser</span
+                ><span class="detail-diagram-node">Canvas Visualiser</span
                 ><span class="detail-diagram-arrow">→</span
-                ><span class="detail-diagram-node">Saved UI</span>
+                ><span class="detail-diagram-node">Themed UI</span>
               </div>
             </div>
           </section>
@@ -102,9 +119,11 @@
               <img src="../asset/av3.png" alt="Audio Visualiser visual 3" />
             </div>
           </section>
-          <a class="detail-next" href="analytics-dashboard.html"
-            >Next project →</a
-          >
+          <a class="detail-next" href="cyclework.html">Next project →</a>
+          <p></p>
+          <a href="https://avisualiser.onrender.com/" class="btn-primary"><span>VISIT DEPLOYED PROJECT DEMO</span><span class="arrow">→</span> </a>
+          
+          <a class="btn-primary" href="https://github.com/Suraj-xaosi/Avisualiser"><span>VISIT SOURCE CODE REPO</span><span class="arrow">→</span> </a>
         </div>
       </section>
     </main>

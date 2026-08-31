@@ -827,7 +827,7 @@
   .about-text {
     font-family: var(--ff-body);
     font-size: 1.05rem;
-    color: var(--text-muted);
+    color: var(--ink);
     line-height: 1.85;
     margin-bottom: 40px;
   }
@@ -956,7 +956,7 @@
     font-size: 0.5rem;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--ink);
     border: 1px solid var(--border);
     padding: 5px 10px;
     transition: border-color 0.3s, color 0.3s;
@@ -1062,7 +1062,7 @@
     border-bottom: 1px solid var(--border);
     font-family: var(--ff-body);
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--ink);
   }
   .skill-item:last-child { border-bottom: none; }
   .skill-dots {
@@ -1322,7 +1322,7 @@
     font-size: 0.55rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--ink);
   }
   .detail-meta-value { display: block; margin-top: 5px; font-size: 1rem; }
   .detail-content {
@@ -1340,7 +1340,7 @@
     text-transform: uppercase;
     margin-bottom: 18px;
   }
-  .detail-section p, .detail-section li { color: var(--text-muted); line-height: 1.85; }
+  .detail-section p, .detail-section li { color: var(--ink); line-height: 1.85; }
   .detail-section ul { padding-left: 20px; }
   .detail-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
   .detail-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 28px; }
