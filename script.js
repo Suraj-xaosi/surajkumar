@@ -127,6 +127,27 @@ const statsObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 statNumbers.forEach(n => statsObserver.observe(n));
 
+// ── WEEKLY REPORT ────────────────────────────────────────────
+const RAW_URL = 'https://raw.githubusercontent.com/Suraj-xaosi/SumUpWEEK/main/reportHistory.md';
+const weeklyReport = document.getElementById('weekly-report');
+
+if (weeklyReport && window.marked) {
+  fetch(RAW_URL)
+    .then(response => {
+      if (!response.ok) throw new Error(`Report request failed: ${response.status}`);
+      return response.text();
+    })
+    .then(markdownText => {
+      weeklyReport.innerHTML = marked.parse(markdownText);
+    })
+    .catch(error => {
+      console.error('Report load nahi hua:', error);
+      weeklyReport.innerHTML = '<p class="weekly-report-status">The weekly report is not available right now.</p>';
+    });
+} else if (weeklyReport) {
+  weeklyReport.innerHTML = '<p class="weekly-report-status">The weekly report could not be loaded.</p>';
+}
+
 // ── HERO NAME LETTER HOVER ────────────────────────────────────
 document.querySelectorAll('.hero-name span').forEach(span => {
   const letters = span.innerText.split('');
