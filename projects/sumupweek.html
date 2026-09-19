@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum Up Week | Suraj Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="detail-page">
+    <nav>
+      <a class="nav-logo" href="../index.html"
+        ><span class="logo-mark">S</span
+        ><span class="logo-text">Suraj<span>Developer</span></span></a
+      ><a class="detail-back" href="../index.html#work"
+        >Back to Work <span>+</span></a
+      >
+    </nav>
+    <main class="detail-main">
+      <a class="detail-back" href="../index.html#work">← All Projects</a>
+      <section class="detail-hero">
+        <div>
+          <div class="section-label detail-kicker">Featured Project · 01</div>
+          <h1 class="detail-title">Sum Up Week</h1>
+          <p class="detail-lead">
+            A small, personal CLI that turns a week of GitHub activity into a
+            polished developer update. It combines commits, pull requests,
+            closed issues, and the work that never made it into GitHub, then
+            gives the result back in a format ready to paste.
+          </p>
+          <div class="detail-meta">
+            <div class="detail-meta-item">
+              <span class="detail-meta-label">Role</span
+              ><span class="detail-meta-value">Solo Developer</span>
+            </div>
+            <div class="detail-meta-item">
+              <span class="detail-meta-label">Focus</span
+              ><span class="detail-meta-value">CLI automation &amp; AI writing</span>
+            </div>
+            <div class="detail-meta-item">
+              <span class="detail-meta-label">Status</span
+              ><span class="detail-meta-value">Open source &amp; local-first</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail-hero-image">
+          <div class="detail-diagram-flow">
+            <span class="detail-diagram-node">GitHub activity</span>
+            <span class="detail-diagram-arrow">+</span>
+            <span class="detail-diagram-node">Your notes</span>
+            <span class="detail-diagram-arrow">→</span>
+            <span class="detail-diagram-node">Weekly report</span>
+          </div>
+        </div>
+      </section>
+      <section class="detail-content">
+        <aside>
+          <div class="detail-section-label">01 / Overview</div>
+          <div class="detail-stack">
+            <span class="tag">TypeScript</span><span class="tag">Node.js</span
+            ><span class="tag">Groq API</span><span class="tag">GitHub API</span
+            ><span class="tag">CLI</span><span class="tag">dotenv</span
+            ><span class="tag">clipboardy</span><span class="tag">tsx</span>
+          </div>
+        </aside>
+        <div>
+          <section class="detail-section">
+            <h2>The challenge</h2>
+            <p>
+              Weekly updates usually require reconstructing a scattered work
+              log from commit history, pull requests, issues, and memory. I
+              wanted that ritual to take minutes without turning the result
+              into a generic AI summary or sending personal credentials through
+              another service.
+            </p>
+          </section>
+          <section class="detail-section">
+            <h2>What I built</h2>
+            <ul>
+              <li>
+                A guided terminal flow that lets the user choose a reporting
+                window from one to ten days and add manual bullets for work
+                that GitHub cannot see.
+              </li>
+              <li>
+                Parallel GitHub API queries for commits, pull requests, and
+                closed issues, with soft failure so one unavailable source does
+                not discard the rest of the report.
+              </li>
+              <li>
+                A focused Groq prompt that produces a short Markdown summary
+                with a Summary section and concrete Highlights instead of
+                inventing activity or padding a quiet week.
+              </li>
+              <li>
+                Optional voice examples so the report can match the author's
+                tone while keeping the week's real activity as its only source
+                of content.
+              </li>
+              <li>
+                A second reflection pass that checks for leaked example
+                content, robotic tone, and accidental team language before
+                returning the final draft.
+              </li>
+              <li>
+                Local output that writes a dated text file, prepends the latest
+                report to Markdown history, copies it to the clipboard, and
+                optionally commits and pushes that history to GitHub.
+              </li>
+            </ul>
+          </section>
+          <section class="detail-section">
+            <h2>Pipeline direction</h2>
+            <div class="detail-diagram">
+              <div class="detail-diagram-flow">
+                <span class="detail-diagram-node">GitHub API</span
+                ><span class="detail-diagram-arrow">→</span
+                ><span class="detail-diagram-node">Activity model</span
+                ><span class="detail-diagram-arrow">→</span
+                ><span class="detail-diagram-node">Groq prompt</span
+                ><span class="detail-diagram-arrow">→</span
+                ><span class="detail-diagram-node">Reflect &amp; refine</span
+                ><span class="detail-diagram-arrow">→</span
+                ><span class="detail-diagram-node">History + clipboard</span>
+              </div>
+            </div>
+          </section>
+          <section class="detail-section">
+            <h2>Project notes</h2>
+            <p>
+              The tool runs on the developer's machine. GitHub and Groq are
+              called directly with credentials loaded from a local environment
+              file, while generated reports stay in the project's own history.
+              The setup is intentionally small: install dependencies, add the
+              two API credentials and username, then run one command.
+            </p>
+          </section>
+          <a class="detail-next" href="cyclework.html">Next project →</a>
+          <p></p>
+          <a class="btn-primary" href="https://github.com/Suraj-xaosi/SumUpWEEK"
+            ><span>VISIT SOURCE CODE REPO</span><span class="arrow">→</span></a
+          >
+          <a class="btn-primary" href="https://github.com/Suraj-xaosi/SumUpWEEK#readme"
+            ><span>READ SETUP GUIDE</span><span class="arrow">→</span></a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
