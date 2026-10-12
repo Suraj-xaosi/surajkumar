@@ -11,21 +11,10 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="journal-page">
-<div id="loader">
-  <div class="loader-inner">
-    <div class="loader-monogram">S</div>
-    <div class="loader-text">Loading Journal</div>
-  </div>
-</div>
-
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
 <div class="mobile-menu" id="mobileMenu">
-  <a href="index.html#hero" onclick="closeMobile()">Home</a>
-  <a href="index.html#about" onclick="closeMobile()">About</a>
-  <a href="index.html#work" onclick="closeMobile()">Work</a>
   <a href="index.html#skills" onclick="closeMobile()">Skills</a>
+  <a href="index.html#work" onclick="closeMobile()">Work</a>
+  <a href="index.html#about" onclick="closeMobile()">About</a>
   <a href="index.html#contact" onclick="closeMobile()">Contact</a>
   <div class="mobile-menu-deco">Suraj Dev · Build Journal</div>
 </div>
@@ -36,10 +25,9 @@
     <div class="logo-text">Suraj<span>Developer</span></div>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html#hero">Home</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#work">Work</a></li>
     <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#about">About</a></li>
     <li><a href="index.html#contact">Contact</a></li>
   </ul>
   <div class="nav-avail"><div class="avail-dot"></div>Build Journal</div>
@@ -59,12 +47,12 @@
     <a href="index.html" class="journal-back">← Back to Portfolio</a>
     <div class="weekly-report-header">
       <div>
-        <div class="section-label reveal">Weekly Progress</div>
-        <h1 class="section-heading reveal reveal-delay-1">Build<br>Journal</h1>
+        <div class="section-label">Weekly Progress</div>
+        <h1 class="section-heading">Build<br>Journal</h1>
       </div>
-      <p class="weekly-report-intro reveal reveal-delay-2">A running record of what I am learning, building, and improving each week.</p>
+      <p class="weekly-report-intro">A running record of what I am learning, building, and improving each week.</p>
     </div>
-    <article id="weekly-report" class="weekly-report-content reveal reveal-delay-3" aria-live="polite">
+    <article id="weekly-report" class="weekly-report-content" aria-live="polite">
       <p class="weekly-report-status">Loading the latest report...</p>
     </article>
   </section>

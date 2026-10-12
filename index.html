@@ -16,24 +16,11 @@
   data-domain-name="suraj-xaosi.github.io715"
   data-api-key="495f081d-9908-4827-b13b-5744b9d192c0">
 </script>
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-inner">
-    <div class="loader-monogram">S</div>
-    <div class="loader-text">Loading Portfolio</div>
-  </div>
-</div>
-
-<!-- CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#hero" onclick="closeMobile()">Home</a>
-  <a href="#about" onclick="closeMobile()">About</a>
-  <a href="#work" onclick="closeMobile()">Work</a>
   <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#work" onclick="closeMobile()">Work</a>
+  <a href="#about" onclick="closeMobile()">About</a>
   <a href="#contact" onclick="closeMobile()">Contact</a>
   <div class="mobile-menu-deco">Suraj Dev · Full Stack Developer</div>
 </div>
@@ -45,10 +32,9 @@
     <div class="logo-text">Suraj<span>Developer</span></div>
   </div>
   <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-avail"><div class="avail-dot"></div>Available for Work</div>
@@ -57,120 +43,66 @@
   </div>
 </nav>
 
-<!-- SIDE NAV -->
-<div class="side-nav" id="sideNav">
-  <a href="#hero" class="active">01</a>
-  <a href="#about">02</a>
-  <a href="#work">03</a>
-  <a href="#skills">04</a>
-  <a href="#contact">05</a>
-</div>
-
-<!-- SOCIAL SIDEBAR -->
-<div class="social-sidebar">
-  <a href="https://www.linkedin.com/in/suraj-kumar-07b52637b" target="_blank" title="LinkedIn">
-    <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-  </a>
-  <a href="https://github.com/Suraj-xaosi/Suraj-xaosi.git" target="_blank" title="GitHub">
-    <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-  </a>
-  <a href="mailto:surajjee343@gmail.com" title="Email">
-    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-  </a>
-</div>
-
-<!-- ── HERO
+<!-- ── SKILLS
 
 ─────────────────────── -->
-<section id="hero" class="section">
-  <div class="corner-deco corner-tl">
-    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/><path d="M10,0 L0,0 L0,10"/></svg>
-  </div>
-  <div class="corner-deco corner-tr">
-    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/><path d="M10,0 L0,0 L0,10"/></svg>
-  </div>
-  <div class="corner-deco corner-bl">
-    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/><path d="M10,0 L0,0 L0,10"/></svg>
-  </div>
-  <div class="corner-deco corner-br">
-    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/><path d="M10,0 L0,0 L0,10"/></svg>
-  </div>
-
-  <div class="hero-left">
-    <div class="hero-eyebrow">Hello, I'm</div>
-    <h1 class="hero-name">
-      <span>Suraj</span>
-      <span>Kumar</span>
-    </h1>
-    <div class="hero-title-badge">
-      <span>Full Stack Developer</span>
-      <div class="badge-diamond"></div>
+<section id="skills" class="section">
+  <div class="skills-intro">
+    <div>
+      <div class="section-label">Core Stack</div>
+      <h2 class="section-heading">Skills &amp; Tools</h2>
     </div>
-    <p class="hero-desc">I'm a full-stack developer who enjoys turning ideas into clean, working web applications.</p>
-    <div class="hero-cta">
-      <a href="#work" class="btn-primary"><span>View My Work</span><span class="arrow">→</span></a>
-      <a href="#contact" class="btn-ghost ">Get In Touch <span style="color:var(--gold)">+</span></a>
-      <a href="journal.html" class="btn-ghost">weekly Journal <span style="color:var(--gold)">↗</span></a>
+    <div class="skills-intro-right">
+      The technologies I use to design, build, and ship full-stack applications.
+      <a href="#work" class="arrow-link">View Projects →</a>
     </div>
   </div>
 
-  <div class="hero-right">
-    <div class="hero-photo-wrap">
-      <div class="photo-arch"></div>
-      <div class="hero-photo-frame">
-        <div class="hero-photo-outer"></div>
-        <img src="surajpfp.png" alt="Suraj Dev"/>
-      </div>
-      <div class="hero-badge">
-        <div class="badge-label">Based In</div>
-        <div class="badge-value">India</div>
-        <div class="badge-diamond-icon"></div>
-      </div>
-    </div>
-  </div>
-
-  
-</section>
-
-<!-- ── ABOUT
-
-─────────────────────── -->
-<section id="about" class="section">
-  <div class="corner-deco corner-tl">
-    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/></svg>
-  </div>
-  <div class="corner-deco corner-br">
-    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/></svg>
-  </div>
-
-  <div class="about-grid">
-    <div class="about-img-wrap reveal-left">
-      <div class="about-img-deco"></div>
-      <div class="about-img-frame">
-        <div class="about-arch"></div>
-        <img src="suraj.png" alt="Architecture"/>
-      </div>
-      <div class="who-am-i">Who Am I <span style="display:inline-block;width:1px;height:30px;background:var(--gold);margin-left:10px;"></span></div>
-    </div>
-    <div class="about-right">
-      <div class="section-label reveal">About Me</div>
-      <h2 class="about-heading reveal reveal-delay-1">I like building things that actually work well.</h2>
-      <p class="about-text reveal reveal-delay-2">I'm a full-stack webdeveloper I enjoy building complete web applications from the ground up — designing the database, writing the backend logic, ai agentic workflows and putting together a clean, easy-to-use interface . I'm always learning new tools and looking for ways to build better products.</p>
-      <div class="stats-grid reveal reveal-delay-3">
-        <div class="stat-item">
-          <div class="stat-number">4<span class="stat-plus">+</span></div>
-          <div class="stat-label">Projects<br>Completed</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">10<span class="stat-plus">+</span></div>
-          <div class="stat-label">Technologies<br>Mastered</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">100<span class="stat-plus">%</span></div>
-          <div class="stat-label">Dedication<br>to Quality</div>
-        </div>
-      </div>
-    </div>
+  <div class="skills-cards">
+    <article class="skill-card">
+      <h3 class="skill-card-title">Frontend</h3>
+      <ul class="skill-list">
+        <li>React</li>
+        <li>Next.js</li>
+        <li>Tailwind CSS</li>
+        <li>TanStack Query</li>
+      </ul>
+    </article>
+    <article class="skill-card">
+      <h3 class="skill-card-title">Languages</h3>
+      <ul class="skill-list">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Java</li>
+        <li>C</li>
+      </ul>
+    </article>
+    <article class="skill-card">
+      <h3 class="skill-card-title">Backend</h3>
+      <ul class="skill-list">
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>REST APIs</li>
+        <li>Redis · Kafka</li>
+        <li>LangChain / AI</li>
+      </ul>
+    </article>
+    <article class="skill-card">
+      <h3 class="skill-card-title">Data</h3>
+      <ul class="skill-list">
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>Prisma</li>
+      </ul>
+    </article>
+    <article class="skill-card">
+      <h3 class="skill-card-title">Tools</h3>
+      <ul class="skill-list">
+        <li>Git &amp; GitHub</li>
+        <li>Docker</li>
+        <li>Turborepo</li>
+      </ul>
+    </article>
   </div>
 </section>
 
@@ -180,14 +112,13 @@
 <section id="work" class="section" style="background:var(--warm-white);">
   <div class="work-header">
     <div>
-      <div class="section-label reveal">My Work</div>
-      <h2 class="section-heading reveal reveal-delay-1">Featured<br>Projects</h2>
+      <div class="section-label">My Work</div>
+      <h2 class="section-heading">Featured<br>Projects</h2>
     </div>
-    <a href="#" class="btn-ghost reveal reveal-delay-2">ME <span style="color:var(--gold)">+</span></a>
   </div>
 
   <div class="projects-grid">
-    <a class="project-card reveal" href="projects/analytics-dashboard.html" aria-label="View Analytics Dashboard project details">
+    <a class="project-card" href="projects/analytics-dashboard.html" aria-label="View Analytics Dashboard project details">
       <div class="project-card-img">
         <span class="project-num">01</span>
         <img src="asset/webAnlyIntro.png" alt="Analytics Dashboard"/>
@@ -216,7 +147,7 @@
       </div>
     </a>
 
-    <a class="project-card reveal reveal-delay-2" href="projects/cyclework.html" aria-label="View Cyclework project details">
+    <a class="project-card" href="projects/cyclework.html" aria-label="View Cyclework project details">
       <div class="project-card-img">
         <span class="project-num">01</span>
         <img src="asset/cyclework.png" alt="Cyclework - Goal-Tracking Platform"/>
@@ -238,7 +169,7 @@
       </div>
     </a>
 
-    <a class="project-card reveal reveal-delay-3" href="projects/audio-visualiser.html" aria-label="View Audio Visualiser project details">
+    <a class="project-card" href="projects/audio-visualiser.html" aria-label="View Audio Visualiser project details">
       <div class="project-card-img">
         <span class="project-num">03</span>
         <img src="asset/av.png" alt="Audio Visualiser"/>
@@ -261,7 +192,7 @@
     </a>
 
 
-    <a class="project-card reveal reveal-delay-3" href="projects/sumupweek.html" aria-label="View SumUpWEEK cli details">
+    <a class="project-card" href="projects/sumupweek.html" aria-label="View SumUpWEEK cli details">
       <div class="project-card-img">
         <span class="project-num">04</span>
         <img src="asset/cli.png" alt="sum up week cli"/>
@@ -287,108 +218,49 @@
   </div>
 </section>
 
-<!-- ── SKILLS
+<!-- ── ABOUT
 
 ─────────────────────── -->
-<section id="skills" class="section">
-  <div class="skills-intro">
-    <div>
-      <div class="section-label reveal">My Expertise</div>
-      <h2 class="section-heading reveal reveal-delay-1">Skills &amp;<br>Expertise</h2>
-    </div>
-    <div class="skills-intro-right reveal reveal-delay-2">
-      The tools and technologies I use to build web applications from start to finish — front end, back end, and everything in between.
-      <a href="#work" class="arrow-link">View Projects →</a>
-    </div>
+<section id="about" class="section">
+  <div class="corner-deco corner-tl">
+    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/></svg>
+  </div>
+  <div class="corner-deco corner-br">
+    <svg class="corner-svg" viewBox="0 0 50 50"><path d="M50,0 L0,0 L0,50"/><path d="M40,0 L0,0 L0,40"/></svg>
   </div>
 
-  <div class="skills-cards">
-    <!-- Frontend -->
-    <div class="skill-card reveal">
-      <div class="skill-card-icon">
-        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+  <div class="about-grid">
+    <div class="about-img-wrap">
+      <div class="about-img-deco"></div>
+      <div class="about-img-frame">
+        <div class="about-arch"></div>
+        <img src="suraj.png" alt="Architecture"/>
       </div>
-      <div class="skill-card-title">Frontend<br>Development</div>
-      <ul class="skill-list">
-        <li class="skill-item">React.js <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Next.js <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></li>
-        <li class="skill-item">TypeScript <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Tailwind CSS <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Redux toolkit <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Tanstack Query <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></li>
-      </ul>
+      <div class="who-am-i">Who Am I <span style="display:inline-block;width:1px;height:30px;background:var(--gold);margin-left:10px;"></span></div>
     </div>
-    <!-- Backend -->
-    <div class="skill-card reveal reveal-delay-1">
-      <div class="skill-card-icon">
-        <svg viewBox="0 0 24 24"><path d="M5 12H19M12 5l7 7-7 7"/></svg>
+    <div class="about-right">
+      <div class="section-label">About Me</div>
+      <h2 class="about-heading">I like building things that actually work well.</h2>
+      <p class="about-text">I'm a full-stack webdeveloper I enjoy building complete web applications from the ground up — designing the database, writing the backend logic, ai agentic workflows and putting together a clean, easy-to-use interface . I'm always learning new tools and looking for ways to build better products.</p>
+      <div class="about-links">
+        <a href="#work" class="btn-primary"><span>View My Work</span><span class="arrow">→</span></a>
+        <a href="journal.html" class="btn-ghost">Weekly Journal <span style="color:var(--gold)">↗</span></a>
+        <a href="#contact" class="btn-ghost">Get In Touch <span style="color:var(--gold)">+</span></a>
       </div>
-      <div class="skill-card-title">Backend<br>Development</div>
-      <ul class="skill-list">
-        <li class="skill-item">Node.js <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div></li>
-        <li class="skill-item">Express.js <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></li>
-        <li class="skill-item">CDN <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Kafka <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Redis <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Langchain <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Agenti AI <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        
-        
-      </ul>
-    </div>
-    <!-- Databases -->
-    <div class="skill-card reveal reveal-delay-2">
-      <div class="skill-card-icon">
-        <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">4<span class="stat-plus">+</span></div>
+          <div class="stat-label">Projects<br>Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10<span class="stat-plus">+</span></div>
+          <div class="stat-label">Technologies<br>Mastered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100<span class="stat-plus">%</span></div>
+          <div class="stat-label">Dedication<br>to Quality</div>
+        </div>
       </div>
-      <div class="skill-card-title">Databases</div>
-      <ul class="skill-list">
-        <li class="skill-item">MongoDB <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></li>
-        <li class="skill-item">PostgreSQL <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Prisma ORM <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-      </ul>
-    </div>
-    <!-- DevOps -->
-    <div class="skill-card reveal reveal-delay-3">
-      <div class="skill-card-icon">
-        <svg viewBox="0 0 24 24"><path d="M18 10h-4V6"/><path d="M14 10l7-7"/><path d="M21 16v2a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2h2"/></svg>
-      </div>
-      <div class="skill-card-title">DevOps &amp;<br>Tools</div>
-      <ul class="skill-list">
-        <li class="skill-item">Docker <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Git &amp; GitHub <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div></li>
-        <li class="skill-item">Turborepo <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Modular monoliths <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Microservices <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></li>
-      </ul>
-    </div>
-    <div class="skill-card reveal reveal-delay-1">
-      <div class="skill-card-icon">
-        <svg viewBox="0 0 24 24"><path d="M5 12H19M12 5l7 7-7 7"/></svg>
-      </div>
-      <div class="skill-card-title">Programming Language</div>
-      <ul class="skill-list">
-        <li class="skill-item">JavaScript <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div></li>
-        <li class="skill-item">TypeScript <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></li>
-        <li class="skill-item">C <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></li>
-        <li class="skill-item">Java <div class="skill-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="skill-banner reveal">
-    <div style="display:flex;gap:60px;align-items:center;flex-wrap:wrap;">
-      <svg viewBox="0 0 80 60" width="80" height="60" style="flex-shrink:0;opacity:0.6;">
-        <line x1="40" y1="0" x2="40" y2="60" stroke="var(--gold)" stroke-width="0.5"/>
-        <line x1="0" y1="30" x2="80" y2="30" stroke="var(--gold)" stroke-width="0.5"/>
-        <circle cx="40" cy="30" r="20" stroke="var(--gold)" stroke-width="0.5" fill="none"/>
-        <circle cx="40" cy="30" r="30" stroke="var(--gold)" stroke-width="0.5" fill="none"/>
-      </svg>
-      <div class="skill-banner-text">Always Learning,<br>Always Building.</div>
-    </div>
-    <div>
-      <p class="skill-banner-sub">I enjoy learning new tools and using them to build real, working projects.</p>
-      <a href="#work" class="btn-primary" style="margin-top:20px;display:inline-flex;"><span>View My Work</span><span class="arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -408,16 +280,16 @@
 
   <div class="contact-grid">
     <div>
-      <div class="section-label reveal">Get In Touch</div>
-      <h2 class="contact-heading reveal reveal-delay-1">Let's Create<br>Something<br>Amazing<br>Together</h2>
-      <div class="contact-divider reveal reveal-delay-2"></div>
-      <p class="contact-text reveal reveal-delay-2">I'm open to new opportunities, internships, and interesting projects. If you'd like to work together, or just want to say hello, feel free to reach out.</p>
-      <a href="mailto:surajjee343@gmail.com" class="btn-primary reveal reveal-delay-3" style="display:inline-flex;">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="contact-heading">Let's Create<br>Something<br>Amazing<br>Together</h2>
+      <div class="contact-divider"></div>
+      <p class="contact-text">I'm open to new opportunities, internships, and interesting projects. If you'd like to work together, or just want to say hello, feel free to reach out.</p>
+      <a href="mailto:surajjee343@gmail.com" class="btn-primary" style="display:inline-flex;">
         <span>Send Message</span><span class="arrow">→</span>
       </a>
     </div>
 
-    <div class="contact-info reveal reveal-delay-1">
+    <div class="contact-info">
       <div class="contact-info-item">
         <div class="contact-info-icon">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
